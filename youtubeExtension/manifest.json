@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Remove_old_vids",
+    "version": "1.0",
+    "description": "removes old youtube videos",
+    "permissions": [
+        "activeTab"
+      ],
+      "content_scripts": [
+        {
+          "matches": ["*://*.youtube.com/*"]
+        }
+    ],
+    "browser_action": {
+        "default_title": "Remove Old Youtube",
+        "default_popup": "youtubemenu.html"
+    }
+}
